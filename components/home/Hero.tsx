@@ -16,6 +16,7 @@ export default function Hero() {
           fill
           className="object-cover object-right"
           priority
+          fetchPriority="high"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-bg-primary/90 via-bg-primary/70 to-bg-primary/30" />
