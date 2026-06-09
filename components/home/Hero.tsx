@@ -7,7 +7,7 @@ import Icon from '@/components/ui/Icon';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[95svh] flex items-center overflow-hidden">
+    <section className="relative min-h-[90svh] flex items-center overflow-hidden">
       {/* Фоновое изображение */}
       <div className="absolute inset-0 z-0">
         <Image

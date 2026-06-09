@@ -325,8 +325,12 @@ export default function PolishPageClient() {
                 <div key={index} className={`flex justify-between items-center p-4 ${index < prices.length - 1 ? 'border-b border-white/10' : ''}`}>
                   <div>
                     <span className="text-text-primary font-medium">{item.car}</span>
-                    {item.examples && <div className="text-text-secondary/50 text-xs mt-0.5">{item.examples}</div>}
-                    {item.description && <div className="text-text-secondary/50 text-xs mt-0.5">{item.description}</div>}
+                    {'examples' in item && item.examples && (
+                      <div className="text-text-secondary/50 text-xs mt-0.5">{item.examples}</div>
+                    )}
+                    {'description' in item && item.description && (
+                      <div className="text-text-secondary/50 text-xs mt-0.5">{item.description}</div>
+                    )}
                   </div>
                   <span className="text-accent font-semibold">{item.price}</span>
                 </div>

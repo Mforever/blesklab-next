@@ -106,7 +106,9 @@ export default function Reviews() {
                   )}
                 </div>
                 {review.verified && (
-                  <Icon name="FaCheckCircle" className="text-accent/60 text-xs sm:text-sm shrink-0" title="Подтверждённый отзыв" />
+                  <span title="Подтверждённый отзыв">
+  <Icon name="FaCheckCircle" className="text-accent/60 text-xs sm:text-sm shrink-0" />
+</span>
                 )}
               </div>
 
