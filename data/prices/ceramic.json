@@ -1,0 +1,33 @@
+{
+  "title": "Керамическое покрытие",
+  "base": "от 22 000 ₽",
+  "premium": "от 32 000 ₽",
+  "classes": [
+    {
+      "id": "sedan",
+      "name": "Легковой (седан / хетчбэк)",
+      "examples": "Solaris, Rio, Polo, Rapid",
+      "base": 22000,
+      "premium": 32000
+    },
+    {
+      "id": "business",
+      "name": "Бизнес-седан / Кроссовер",
+      "examples": "BMW 5, X3, Camry, RAV4",
+      "base": 27000,
+      "premium": 37000
+    },
+    {
+      "id": "suv",
+      "name": "Внедорожник / Минивэн",
+      "examples": "Land Cruiser, X7, GLS, Alphard",
+      "base": 35000,
+      "premium": 45000
+    }
+  ],
+  "types": [
+    { "id": "base", "name": "Базовое (FC8)", "description": "Однократное нанесение, срок до 2 лет" },
+    { "id": "premium", "name": "Премиум (FC8 + FC15)", "description": "С ежегодным обслуживанием, срок до 5 лет" }
+  ],
+  "discountNote": "Скидка на керамику — такая же, как на бронирование. Чем больше зон бронируете, тем выгоднее керамика."
+}

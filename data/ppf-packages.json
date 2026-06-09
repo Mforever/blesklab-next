@@ -1,0 +1,36 @@
+[
+  {
+    "id": "basic",
+    "name": "Базовый",
+    "description": "Защита самых уязвимых зон",
+    "zones": ["bumper_front", "headlights", "foglights", "mirrors"],
+    "price": 28000,
+    "discount": 5
+  },
+  {
+    "id": "optimal",
+    "name": "Оптимальный",
+    "description": "Полная защита передней части",
+    "zones": ["hood", "bumper_front", "grille", "headlights", "foglights", "mirrors", "fenders_front"],
+    "price": 54000,
+    "discount": 8,
+    "popular": true
+  },
+  {
+    "id": "premium",
+    "name": "Премиум",
+    "description": "Перед + крыша + стойки",
+    "zones": ["hood", "bumper_front", "grille", "headlights", "foglights", "mirrors", "fenders_front", "roof", "pillars_windshield"],
+    "price": 74000,
+    "discount": 10
+  },
+  {
+    "id": "full_body",
+    "name": "Полное бронирование",
+    "description": "Весь кузов под защитой",
+    "zones": ["full_body"],
+    "price": 230000,
+    "discount": 0,
+    "bonus": "Антидождь на все стёкла в подарок"
+  }
+]

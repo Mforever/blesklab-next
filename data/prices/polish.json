@@ -1,0 +1,30 @@
+{
+  "title": "Полировка кузова",
+  "classes": [
+    {
+      "id": "sedan",
+      "name": "Легковой (седан / хетчбэк)",
+      "examples": "Solaris, Rio, Polo, Rapid",
+      "price": 12000
+    },
+    {
+      "id": "business",
+      "name": "Бизнес-седан / Кроссовер",
+      "examples": "BMW 5, Camry, RAV4, X3",
+      "price": 14000
+    },
+    {
+      "id": "suv",
+      "name": "Внедорожник / Минивэн",
+      "examples": "Land Cruiser, X7, GLS, Alphard",
+      "price": 18000
+    }
+  ],
+  "additional": [
+    { "name": "Предпродажная полировка", "price": 8000, "description": "Освежение ЛКП перед продажей" }
+  ],
+  "elements": [
+    { "name": "Стандартный элемент", "description": "Дверь, крыло, бампер", "price": 2500 },
+    { "name": "Крупный элемент", "description": "Капот, крыша", "price": 5000 }
+  ]
+}

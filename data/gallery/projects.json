@@ -1,0 +1,113 @@
+[
+  {
+    "slug": "bmw-x5-polish-ceramic",
+    "title": "BMW X5 — полировка + керамика",
+    "description": "Убрали глубокие царапины после мойки. Нанесли керамику Hendlex FC8. Автомобиль сияет как новый.",
+    "cover": "/images/gallery/bmw-x5-polish-ceramic/cover.jpg",
+    "photos": [
+      {
+        "src": "/images/gallery/bmw-x5-polish-ceramic/01.jpg",
+        "alt": "До полировки — глубокие царапины на капоте",
+        "caption": "Состояние до: царапины от щёток на мойке"
+      },
+      {
+        "src": "/images/gallery/bmw-x5-polish-ceramic/02.jpg",
+        "alt": "Процесс полировки капота",
+        "caption": "Абразивная полировка пастой Koch Chemie"
+      },
+      {
+        "src": "/images/gallery/bmw-x5-polish-ceramic/03.jpg",
+        "alt": "Результат полировки — глубокий блеск",
+        "caption": "После финишной полировки: зеркальный блеск"
+      },
+      {
+        "src": "/images/gallery/bmw-x5-polish-ceramic/04.jpg",
+        "alt": "Нанесение керамики Hendlex FC8",
+        "caption": "Нанесение керамического покрытия в 2 слоя"
+      }
+    ],
+    "services": ["polish", "ceramic"],
+    "date": "2026-05-20"
+  },
+  {
+    "slug": "mercedes-e-class-polish-ceramic",
+    "title": "Mercedes E-Class — восстановление ЛКП",
+    "description": "Восстановили лакокрасочное покрытие после неудачной мойки. Нанесли керамику для долговременной защиты.",
+    "cover": "/images/gallery/mercedes-e-class-polish-ceramic/cover.jpg",
+    "photos": [
+      {
+        "src": "/images/gallery/mercedes-e-class-polish-ceramic/01.jpg",
+        "alt": "Mercedes E-Class до полировки",
+        "caption": "До: голограммы и паутина по всему кузову"
+      },
+      {
+        "src": "/images/gallery/mercedes-e-class-polish-ceramic/02.jpg",
+        "alt": "Процесс полировки",
+        "caption": "Эксцентриковая машинка RUPES — щадящий режим"
+      },
+      {
+        "src": "/images/gallery/mercedes-e-class-polish-ceramic/03.jpg",
+        "alt": "Результат — глубокий чёрный",
+        "caption": "После: идеально ровная поверхность без дефектов"
+      }
+    ],
+    "services": ["polish", "ceramic"],
+    "date": "2026-05-15"
+  },
+  {
+    "slug": "audi-q7-ppf-full",
+    "title": "Audi Q7 — полное бронирование",
+    "description": "Полная оклейка кузова полиуретановой плёнкой Premium Shield. Защита от сколов на 7 лет.",
+    "cover": "/images/gallery/audi-q7-ppf-full/cover.jpg",
+    "photos": [
+      {
+        "src": "/images/gallery/audi-q7-ppf-full/01.jpg",
+        "alt": "Подготовка к оклейке",
+        "caption": "Тщательная мойка и обезжиривание перед оклейкой"
+      },
+      {
+        "src": "/images/gallery/audi-q7-ppf-full/02.jpg",
+        "alt": "Раскрой плёнки",
+        "caption": "Точный раскрой плёнки по лекалам Audi Q7"
+      },
+      {
+        "src": "/images/gallery/audi-q7-ppf-full/03.jpg",
+        "alt": "Оклейка капота",
+        "caption": "Процесс оклейки: плёнка ложится без пузырей"
+      },
+      {
+        "src": "/images/gallery/audi-q7-ppf-full/04.jpg",
+        "alt": "Финальный результат",
+        "caption": "Полное бронирование завершено — автомобиль под защитой"
+      }
+    ],
+    "video": "https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239035&hash=e7efa9a2106eee07&hd=4",
+    "services": ["ppf_full"],
+    "date": "2026-05-10"
+  },
+  {
+    "slug": "tesla-model-3-ceramic",
+    "title": "Tesla Model 3 — керамическое покрытие",
+    "description": "Нанесли керамику Hendlex FC15 на новый автомобиль. Гидрофобный эффект и защита от УФ.",
+    "cover": "/images/gallery/tesla-model-3-ceramic/cover.jpg",
+    "photos": [
+      {
+        "src": "/images/gallery/tesla-model-3-ceramic/01.jpg",
+        "alt": "Tesla Model 3 — подготовка",
+        "caption": "Подготовка кузова: мойка и обезжиривание"
+      },
+      {
+        "src": "/images/gallery/tesla-model-3-ceramic/02.jpg",
+        "alt": "Нанесение керамики",
+        "caption": "Нанесение Hendlex FC15 в 2 слоя"
+      },
+      {
+        "src": "/images/gallery/tesla-model-3-ceramic/03.jpg",
+        "alt": "Гидрофобный эффект",
+        "caption": "Результат: вода скатывается шариками"
+      }
+    ],
+    "services": ["ceramic"],
+    "date": "2026-05-05"
+  }
+]

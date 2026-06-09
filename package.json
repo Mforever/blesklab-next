@@ -9,13 +9,21 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "critters": "^0.0.23",
+    "framer-motion": "^12.40.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.5",
     "next": "16.2.6",
+    "next-mdx-remote": "^6.0.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.76.1",
+    "react-icons": "^5.6.0",
+    "swiper": "^12.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.41",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
