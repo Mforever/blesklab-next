@@ -191,32 +191,32 @@ export default function PPFPageClient() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              {
-                url: 'https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239035&hash=e7efa9a2106eee07&hd=4',
-                label: 'Самовосстановление царапин',
-              },
-              {
-                url: 'https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239034&hash=0b35690ca9bf2ef8&hd=4',
-                label: 'Гидрофобный эффект',
-              },
-            ].map((video, index) => (
-              <div
-                key={index}
-                className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-black"
-              >
-                <iframe
-                  src={`${video.url}&autoplay=1&loop=1&mute=1`}
-                  className="absolute top-0 left-0 w-full h-full"
-                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                  frameBorder="0"
-                  title={video.label}
-                />
-                <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5">
-                  <span className="text-white text-xs">{video.label}</span>
-                </div>
+            {/* Видео */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-black">
+              <iframe
+                src="https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239035&hash=e7efa9a2106eee07&hd=4&autoplay=1&loop=1&mute=1&rel=0&showinfo=0"
+                className="absolute top-0 left-0 w-full h-full"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                frameBorder="0"
+                title="Самовосстановление царапин"
+              />
+              <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5">
+                <span className="text-white text-xs">Самовосстановление царапин</span>
               </div>
-            ))}
+            </div>
+
+            {/* Изображение */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-black">
+              <img
+                src="https://s.fotora.ru/b31a80ad4d72c1d7.jpeg"
+                alt="Гидрофобный эффект"
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5">
+                <span className="text-white text-xs">Гидрофобный эффект</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

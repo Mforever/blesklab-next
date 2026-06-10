@@ -9,14 +9,16 @@ import Icon from '@/components/ui/Icon';
 import { useModalContext } from '@/contexts/ModalContext';
 import ceramicPrices from '@/data/prices/ceramic.json';
 
-const videos = [
+const videoItems = [
   {
     title: 'Гидрофобный эффект',
-    url: 'https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239034&hash=0b35690ca9bf2ef8&hd=4',
+    url: 'https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239037&hash=fcdd6247d4c3aa76&hd=4&autoplay=1&loop=1&mute=1',
+    type: 'video' as const,
   },
   {
     title: 'Глубина блеска',
-    url: 'https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239032&hash=8ae3ee7e1b5e4e5c&hd=4',
+    url: 'https://s.fotora.ru/7f1ab6858362ac2a.jpeg',
+    type: 'image' as const,
   },
 ];
 
@@ -160,17 +162,26 @@ export default function CeramicPageClient() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {videos.map((video, index) => (
+            {videoItems.map((item, index) => (
               <div key={index} className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-black">
-                <iframe
-                  src={`${video.url}&autoplay=1&loop=1&mute=1&rel=0&showinfo=0`}
-                  className="absolute top-0 left-0 w-full h-full"
-                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                  frameBorder="0"
-                  title={video.title}
-                />
+                {item.type === 'video' ? (
+                  <iframe
+                    src={`${item.url}&autoplay=1&loop=1&mute=1&rel=0&showinfo=0`}
+                    className="absolute top-0 left-0 w-full h-full"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                    frameBorder="0"
+                    title={item.title}
+                  />
+                ) : (
+                  <img
+                    src={item.url}
+                    alt={item.title}
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                )}
                 <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5">
-                  <span className="text-white text-xs">{video.title}</span>
+                  <span className="text-white text-xs">{item.title}</span>
                 </div>
               </div>
             ))}

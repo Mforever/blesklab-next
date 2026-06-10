@@ -75,18 +75,15 @@ export default function ReelsDrum({
     [reels.length]
   );
 
-  // Учёт просмотра текущего рилса
   useEffect(() => {
     const reel = reels[currentIndex];
     if (reel) trackView(reel.id);
   }, [currentIndex, reels, trackView]);
 
-  // Инициализация очереди
   useEffect(() => {
     setPlayQueue(shuffleQueue(initialIndex));
   }, []);
 
-  // Автопереключение
   useEffect(() => {
     if (!autoPlay || isPaused) return;
     const currentReel = reels[currentIndex];
@@ -137,7 +134,6 @@ export default function ReelsDrum({
   const goNext = () => goTo(currentIndex + 1);
   const goPrev = () => goTo(currentIndex - 1);
 
-  // Клавиатура
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'ArrowLeft') goPrev();
@@ -147,7 +143,6 @@ export default function ReelsDrum({
     return () => window.removeEventListener('keydown', handleKey);
   }, [goNext, goPrev]);
 
-  // Свайпы
   useEffect(() => {
     let startX = 0;
     let startY = 0;
@@ -347,7 +342,6 @@ export default function ReelsDrum({
                     </>
                   ) : (
                     <>
-                      {/* Фон-заглушка */}
                       <div className="w-full h-full bg-gradient-to-br from-bg-element via-bg-secondary to-bg-element flex flex-col items-center justify-center p-3 gap-2">
                         <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
                           <Icon name="FaPlay" className="text-accent text-sm sm:text-base ml-0.5" />

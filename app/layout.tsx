@@ -120,6 +120,9 @@ export default function RootLayout({
   return (
     <html lang="ru" className={montserrat.variable}>
       <head>
+        <link rel="icon" type="image/svg+xml" href="/images/logo/logo.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo/favicon-32x32.png" />
+        <link rel="apple-touch-icon" href="/images/logo/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

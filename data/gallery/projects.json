@@ -7,23 +7,8 @@
     "photos": [
       {
         "src": "/images/gallery/bmw-x5-polish-ceramic/01.jpg",
-        "alt": "До полировки — глубокие царапины на капоте",
-        "caption": "Состояние до: царапины от щёток на мойке"
-      },
-      {
-        "src": "/images/gallery/bmw-x5-polish-ceramic/02.jpg",
-        "alt": "Процесс полировки капота",
-        "caption": "Абразивная полировка пастой Koch Chemie"
-      },
-      {
-        "src": "/images/gallery/bmw-x5-polish-ceramic/03.jpg",
-        "alt": "Результат полировки — глубокий блеск",
-        "caption": "После финишной полировки: зеркальный блеск"
-      },
-      {
-        "src": "/images/gallery/bmw-x5-polish-ceramic/04.jpg",
-        "alt": "Нанесение керамики Hendlex FC8",
-        "caption": "Нанесение керамического покрытия в 2 слоя"
+        "alt": "Новый автомобиль",
+        "caption": "Подготовили новый автомобиль и покрыли лучшей керамикой"
       }
     ],
     "services": ["polish", "ceramic"],
@@ -56,8 +41,8 @@
   },
   {
     "slug": "audi-q7-ppf-full",
-    "title": "Audi Q7 — полное бронирование",
-    "description": "Полная оклейка кузова полиуретановой плёнкой Premium Shield. Защита от сколов на 7 лет.",
+    "title": "Audi  — полировка ",
+    "description": "Отполирована и покрыта керамикой",
     "cover": "/images/gallery/audi-q7-ppf-full/cover.jpg",
     "photos": [
       {
@@ -67,18 +52,18 @@
       },
       {
         "src": "/images/gallery/audi-q7-ppf-full/02.jpg",
-        "alt": "Раскрой плёнки",
-        "caption": "Точный раскрой плёнки по лекалам Audi Q7"
+        "alt": "Полировка керамика ",
+        "caption": "Машина готова к выдаче"
       },
       {
         "src": "/images/gallery/audi-q7-ppf-full/03.jpg",
-        "alt": "Оклейка капота",
-        "caption": "Процесс оклейки: плёнка ложится без пузырей"
+        "alt": "Блеск",
+        "caption": "Превосходной блеск даже светлого автомобиля очень заметен"
       },
       {
         "src": "/images/gallery/audi-q7-ppf-full/04.jpg",
-        "alt": "Финальный результат",
-        "caption": "Полное бронирование завершено — автомобиль под защитой"
+        "alt": "Стойки дверей",
+        "caption": "Стойки дверей защитили качественной ppf пленкой "
       }
     ],
     "video": "https://vkvideo.ru/video_ext.php?oid=-99576867&id=456239035&hash=e7efa9a2106eee07&hd=4",
@@ -86,25 +71,45 @@
     "date": "2026-05-10"
   },
   {
-    "slug": "tesla-model-3-ceramic",
-    "title": "Tesla Model 3 — керамическое покрытие",
+    "slug": "RangeRover-ceramic",
+    "title": "Range Rover — керамическое покрытие",
     "description": "Нанесли керамику Hendlex FC15 на новый автомобиль. Гидрофобный эффект и защита от УФ.",
-    "cover": "/images/gallery/tesla-model-3-ceramic/cover.jpg",
+    "cover": "/images/gallery/RangeRover-ceramic/cover.jpg",
     "photos": [
       {
-        "src": "/images/gallery/tesla-model-3-ceramic/01.jpg",
-        "alt": "Tesla Model 3 — подготовка",
-        "caption": "Подготовка кузова: мойка и обезжиривание"
+        "src": "/images/gallery/RangeRover-ceramic/01.jpg",
+        "alt": "RangeRover-ceramic — подготовка",
+        "caption": "Процесс полировки кузова"
       },
       {
-        "src": "/images/gallery/tesla-model-3-ceramic/02.jpg",
-        "alt": "Нанесение керамики",
-        "caption": "Нанесение Hendlex FC15 в 2 слоя"
+        "src": "/images/gallery/RangeRover-ceramic/02.jpg",
+        "alt": "До полировки",
+        "caption": "До полировки"
       },
       {
-        "src": "/images/gallery/tesla-model-3-ceramic/03.jpg",
-        "alt": "Гидрофобный эффект",
-        "caption": "Результат: вода скатывается шариками"
+        "src": "/images/gallery/RangeRover-ceramic/03.jpg",
+        "alt": "После полировки",
+        "caption": "Результат: после перового прохода устранили дефекты"
+      },
+      {
+        "src": "/images/gallery/RangeRover-ceramic/04.jpg",
+        "alt": "После полировки",
+        "caption": "Результат: устранили дефекты"
+      },
+      {
+        "src": "/images/gallery/RangeRover-ceramic/05.jpg",
+        "alt": "Машина готова",
+        "caption": "Результат: Отполирована и покрыта керамикой"
+      },
+      {
+        "src": "/images/gallery/RangeRover-ceramic/06.jpg",
+        "alt": "После полировки финиш",
+        "caption": "Результат: каождая деталь идеальна"
+      },
+      {
+        "src": "/images/gallery/RangeRover-ceramic/07.jpg",
+        "alt": "Итоговый блеск",
+        "caption": "Результат: Зеркальный блес префосходный финиш"
       }
     ],
     "services": ["ceramic"],
