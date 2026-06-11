@@ -36,7 +36,7 @@ export default function ModalForm({
 
   const [formData, setFormData] = useState({
     name: '',
-    phone: '',
+    phone: '+7',
     car: '',
     message: '',
   });
@@ -44,10 +44,11 @@ export default function ModalForm({
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
   const [phoneError, setPhoneError] = useState<string | null>(null);
 
+  // Сброс формы при закрытии
   useEffect(() => {
     if (!isOpen) {
       const timer = setTimeout(() => {
-        setFormData({ name: '', phone: '', car: '', message: '' });
+        setFormData({ name: '', phone: '+7', car: '', message: '' });
         setPhoneError(null);
         setSubmitStatus(null);
       }, 300);
@@ -55,6 +56,7 @@ export default function ModalForm({
     }
   }, [isOpen]);
 
+  // Блокировка скролла
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -66,6 +68,7 @@ export default function ModalForm({
     };
   }, [isOpen]);
 
+  // Escape
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && isOpen) onClose();
@@ -74,30 +77,37 @@ export default function ModalForm({
     return () => window.removeEventListener('keydown', handleEsc);
   }, [isOpen, onClose]);
 
+  // Форматирование телефона
+  const formatPhone = (value: string): string => {
+    const digits = value.replace(/\D/g, '');
+    if (digits.length === 0) return '+7';
+    const d = digits.slice(0, 11);
+    let result = '+7';
+    if (d.length > 1) result += ' ' + d.slice(1, 4);
+    if (d.length > 4) result += ' ' + d.slice(4, 7);
+    if (d.length > 7) result += ' ' + d.slice(7, 9);
+    if (d.length > 9) result += ' ' + d.slice(9, 11);
+    return result;
+  };
+
   const handlePhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
-    // Получаем только цифры
-    let value = e.target.value.replace(/\D/g, '');
+    const input = e.target.value;
+    const cleaned = input.replace(/[^\d+]/g, '');
 
-    // Ограничиваем 11 цифр (7 + 10)
-    if (value.length > 11) value = value.slice(0, 11);
-
-    // Форматируем
-    let formatted = '';
-    if (value.length > 0) {
-      formatted = '+7';
-      if (value.length > 1) formatted += ' ' + value.slice(1, 4);
-      if (value.length > 4) formatted += ' ' + value.slice(4, 7);
-      if (value.length > 7) formatted += ' ' + value.slice(7, 9);
-      if (value.length > 9) formatted += ' ' + value.slice(9, 11);
+    if (!cleaned.startsWith('+7')) {
+      setFormData({ ...formData, phone: '+7' });
+      setPhoneError(null);
+      return;
     }
 
+    const formatted = formatPhone(cleaned);
     setFormData({ ...formData, phone: formatted });
 
-    // Проверка
-    if (value.length > 0 && value.length < 11) {
-      setPhoneError('Введите номер полностью');
-    } else if (value.length === 11) {
+    const digitsOnly = formatted.replace(/\D/g, '');
+    if (digitsOnly.length === 11) {
       setPhoneError(null);
+    } else if (digitsOnly.length > 1) {
+      setPhoneError('Введите номер полностью');
     } else {
       setPhoneError(null);
     }
@@ -224,15 +234,14 @@ export default function ModalForm({
                     value={formData.phone}
                     onChange={handlePhoneChange}
                     placeholder="+7 (___) ___-__-__"
-                    className={`w-full px-4 py-3 bg-bg-secondary rounded-xl focus:outline-none focus:ring-2 text-text-primary text-base tracking-wider transition-all ${phoneError
+                    className={`w-full px-4 py-3 bg-bg-secondary rounded-xl focus:outline-none focus:ring-2 text-text-primary text-base tracking-wider transition-all ${formData.phone.length > 2 && phoneError
                         ? 'ring-1 ring-red-500/30 focus:ring-red-500/50'
                         : isPhoneValid
                           ? 'ring-1 ring-green-500/30 focus:ring-green-500/50'
                           : 'focus:ring-accent/50'
                       }`}
-                    maxLength={16}
                   />
-                  {phoneError && (
+                  {phoneError && formData.phone.length > 2 && (
                     <p className="text-red-400/80 text-xs mt-1">{phoneError}</p>
                   )}
                 </div>
@@ -262,7 +271,7 @@ export default function ModalForm({
                 {/* Кнопка */}
                 <button
                   type="submit"
-                  disabled={isSubmitting || !formData.phone || !isPhoneValid}
+                  disabled={isSubmitting || !formData.name || !isPhoneValid}
                   className="w-full py-3 bg-accent hover:bg-accent-hover text-bg-primary font-medium rounded-xl transition-all disabled:opacity-40 disabled:cursor-not-allowed text-sm"
                 >
                   {isSubmitting ? 'Отправка...' : 'Отправить'}

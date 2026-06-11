@@ -9,11 +9,12 @@ import Button from '@/components/ui/Button';
 import Icon from '@/components/ui/Icon';
 import { useModalContext } from '@/contexts/ModalContext';
 import polishPrices from '@/data/prices/polish.json';
+import BeforeAfterSlider from '@/components/ui/BeforeAfterSlider';
 
 const beforeAfterExamples = [
-  { title: 'BMW X5', before: '/images/before-after/polish-1/before.jpg', after: '/images/before-after/polish-1/after.jpg' },
-  { title: 'Mercedes E-Class', before: '/images/before-after/polish-2/before.jpg', after: '/images/before-after/polish-2/after.jpg' },
-  { title: 'Audi Q7', before: '/images/before-after/polish-3/before.jpg', after: '/images/before-after/polish-3/after.jpg' },
+  { id: 1, title: 'BMW X5', before: '/images/before-after/polish-1/before.jpg', after: '/images/before-after/polish-1/after.jpg' },
+  { id: 2, title: 'Mercedes E-Class', before: '/images/before-after/polish-2/before.jpg', after: '/images/before-after/polish-2/after.jpg' },
+  { id: 3, title: 'Audi Q7', before: '/images/before-after/polish-3/before.jpg', after: '/images/before-after/polish-3/after.jpg' },
 ];
 
 const benefits = [
@@ -158,50 +159,12 @@ export default function PolishPageClient() {
       {/* До/После */}
       <section className="py-16">
         <div className="container-custom">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-10">
             <span className="inline-block text-accent font-medium text-sm uppercase tracking-[0.2em] mb-4">Результат</span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">До / После</h2>
             <p className="text-text-secondary max-w-2xl mx-auto">Посмотрите на реальные примеры наших работ</p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="flex justify-center gap-2 bg-bg-element rounded-xl p-1 w-fit mx-auto mb-8">
-              <button
-                onClick={() => setActiveTab('before')}
-                className={`px-8 py-2.5 rounded-lg font-medium text-sm transition-all ${activeTab === 'before' ? 'bg-accent text-bg-primary' : 'text-text-secondary hover:text-accent'}`}
-              >
-                ДО
-              </button>
-              <button
-                onClick={() => setActiveTab('after')}
-                className={`px-8 py-2.5 rounded-lg font-medium text-sm transition-all ${activeTab === 'after' ? 'bg-accent text-bg-primary' : 'text-text-secondary hover:text-accent'}`}
-              >
-                ПОСЛЕ
-              </button>
-            </div>
-            <div className="relative rounded-2xl overflow-hidden aspect-video bg-bg-element">
-              <Image
-                src={activeTab === 'before' ? beforeAfterExamples[selectedExample].before : beforeAfterExamples[selectedExample].after}
-                alt={`${beforeAfterExamples[selectedExample].title} — ${activeTab === 'before' ? 'до' : 'после'}`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 80vw"
-              />
-              <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5">
-                <span className="text-white text-xs font-medium">{activeTab === 'before' ? 'ДО' : 'ПОСЛЕ'}</span>
-              </div>
-            </div>
-            <div className="flex justify-center gap-3 mt-6">
-              {beforeAfterExamples.map((example, index) => (
-                <button
-                  key={index}
-                  onClick={() => { setSelectedExample(index); setActiveTab('after'); }}
-                  className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${selectedExample === index ? 'bg-accent text-bg-primary' : 'bg-bg-element text-text-secondary hover:text-accent border border-white/5'}`}
-                >
-                  {example.title}
-                </button>
-              ))}
-            </div>
-          </div>
+          <BeforeAfterSlider items={beforeAfterExamples} />
         </div>
       </section>
 
