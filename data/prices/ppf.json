@@ -3,7 +3,7 @@
   "note": "Полировка включена в стоимость бронирования каждой зоны",
   "discounts": [
     { "zones": 3, "percent": 5, "label": "3+ зоны" },
-    { "zones": 5, "percent": 10, "label": "5+ зон" },
-    { "zones": 10, "percent": 15, "label": "10+ зон" }
+    { "zones": 5, "percent": 7, "label": "5+ зон" },
+    { "zones": 10, "percent": 10, "label": "10+ зон" }
   ]
 }

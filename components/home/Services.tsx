@@ -11,7 +11,6 @@ const services = [
     description: 'Удаляем царапины, голограммы и паутину. Возвращаем глубину цвета и зеркальный блеск.',
     image: '/images/services/polish.jpg',
     href: '/polish',
-    price: 'от 10 000 ₽',
     features: [
       'Эксцентриковая машинка RUPES — безопасно для ЛКП',
       'Пасты Koch Chemie и Farecla — премиум-сегмент',
@@ -25,7 +24,6 @@ const services = [
     description: 'Создаём прочный защитный слой. Гидрофобный эффект 115°, защита от УФ и реагентов.',
     image: '/images/services/ceramic.jpg',
     href: '/ceramic',
-    price: 'от 22 000 ₽',
     features: [
       'Профессиональная нанокерамика Hendlex',
       'Срок службы до 5 лет с обслуживанием',
@@ -39,7 +37,7 @@ const services = [
     description: 'Полиуретановая плёнка премиум-сегмента. Самовосстановление, срок службы 7 лет.',
     image: '/images/services/ppf.jpg',
     href: '/ppf',
-    price: 'от 5 000 ₽',
+  
     features: [
       'Премиум-бренды: DeltaSkin, VHQ, Quantum, Spectroll',
       'Самовосстановление царапин при нагреве',

@@ -1,10 +1,10 @@
 [
-  { "id": "hood", "name": "Капот целиком", "price": 18000, "category": "front" },
+  { "id": "hood", "name": "Капот целиком", "price":  18000, "category": "front" },
   { "id": "bumper_front", "name": "Передний бампер", "price": 18000, "category": "front" },
   { "id": "grille", "name": "Решётка переднего бампера", "price": 5000, "category": "front" },
   { "id": "headlights", "name": "Фары", "price": 6000, "category": "front" },
   { "id": "foglights", "name": "Противотуманные фары", "price": 3000, "category": "front" },
-  { "id": "fenders_front", "name": "Передние крылья", "price": 8000, "category": "front" },
+  { "id": "fenders_front", "name": "Передние крылья", "price": 16000, "category": "front" },
   { "id": "mirrors", "name": "Зеркала боковые", "price": 5000, "category": "front" },
   { "id": "pillars_windshield", "name": "Стойки лобового стекла", "price": 6000, "category": "front" },
   { "id": "roof_stripe", "name": "Полоса на крышу", "price": 4000, "category": "roof" },
@@ -12,12 +12,12 @@
   { "id": "doors_all", "name": "Все двери полностью", "price": 38000, "category": "sides" },
   { "id": "doors_partial", "name": "Двери частично (по низу полоса)", "price": 16000, "category": "sides" },
   { "id": "door_pillars", "name": "Стойки дверей (комплект 4 двери)", "price": 6000, "category": "sides" },
-  { "id": "rockers_outer", "name": "Пороги внешние", "price": 14000, "category": "sides" },
+  { "id": "rockers_outer", "name": "Пороги внешние", "price": 16000, "category": "sides" },
   { "id": "rockers_inner_standard", "name": "Пороги внутренние стандарт", "price": 6000, "category": "sides" },
   { "id": "rockers_inner_max", "name": "Пороги внутренние до замков", "price": 10000, "category": "sides" },
   { "id": "rear_fenders", "name": "Задние крылья полностью (2 шт. со стойками)", "price": 36000, "category": "rear" },
   { "id": "trunk", "name": "Крышка багажника", "price": 10000, "category": "rear" },
   { "id": "bumper_rear", "name": "Задний бампер", "price": 16000, "category": "rear" },
   { "id": "rear_lights", "name": "Задние фонари", "price": 6000, "category": "rear" },
-  { "id": "full_body", "name": "Полное бронирование кузова", "price": 230000, "category": "full" }
+  { "id": "full_body", "name": "Полное бронирование кузова", "price": 200000, "category": "full" }
 ]
