@@ -391,29 +391,30 @@ export default function CeramicPageClient() {
             <span className="inline-block text-accent font-medium text-sm uppercase tracking-[0.2em] mb-4">Цены</span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Стоимость керамики</h2>
           </div>
-          <div className="overflow-x-auto max-w-3xl mx-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b border-accent/30">
-                  <th className="text-left py-3 px-4 text-text-primary text-sm">Класс авто</th>
-                  <th className="text-center py-3 px-4 text-text-primary text-sm">Базовое</th>
-                  <th className="text-center py-3 px-4 text-text-primary text-sm">Премиум</th>
-                </tr>
-              </thead>
-              <tbody>
-                {ceramicPrices.classes.map((item) => (
-                  <tr key={item.id} className="border-b border-white/10">
-                    <td className="py-3 px-4">
-                      <div className="text-text-primary text-sm">{item.name}</div>
-                      <div className="text-text-secondary/50 text-xs">{item.examples}</div>
-                    </td>
-                    <td className="text-center py-3 px-4 text-accent font-semibold text-sm">от {item.base.toLocaleString()} ₽</td>
-                    <td className="text-center py-3 px-4 text-accent font-semibold text-sm">от {item.premium.toLocaleString()} ₽</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+
+          {/* Карточки вместо таблицы */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            {ceramicPrices.classes.map((item) => (
+              <div
+                key={item.id}
+                className="bg-bg-element rounded-xl p-5 text-center border border-white/5"
+              >
+                <h3 className="text-sm font-semibold mb-1">{item.name}</h3>
+                <p className="text-text-secondary/50 text-[10px] mb-4">{item.examples}</p>
+                <div className="space-y-2">
+                  <div>
+                    <p className="text-text-secondary/50 text-[10px] mb-0.5">Базовое</p>
+                    <p className="text-accent font-bold text-lg"> {item.base.toLocaleString()} ₽</p>
+                  </div>
+                  <div className="pt-2 border-t border-white/5">
+                    <p className="text-text-secondary/50 text-[10px] mb-0.5">Премиум</p>
+                    <p className="text-accent font-bold text-lg"> {item.premium.toLocaleString()} ₽</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
+
           <div className="text-center mt-6 text-text-secondary/60 text-xs space-y-1">
             <p>* Ежегодное обслуживание для премиум-защиты: 8 000 ₽</p>
             <p>** Цены указаны с учётом подготовки кузова</p>

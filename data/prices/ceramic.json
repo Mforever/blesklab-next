@@ -7,7 +7,7 @@
       "id": "sedan",
       "name": "Легковой (седан / хетчбэк)",
       "examples": "Solaris, Rio, Polo, Rapid",
-      "base": 22000,
+      "base": 24000,
       "premium": 32000
     },
     {
