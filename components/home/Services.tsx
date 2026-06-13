@@ -104,9 +104,6 @@ export default function Services() {
                 </ul>
 
                 <div className="pt-4 border-t border-white/5">
-                  <div className="text-xl sm:text-2xl lg:text-[28px] font-bold mb-3 sm:mb-4 tracking-tight">
-                    {service.price}
-                  </div>
                   <Link
                     href={service.href}
                     className="flex items-center justify-center w-full py-2.5 sm:py-3 border border-accent text-accent hover:bg-accent hover:text-bg-primary rounded-xl font-medium transition-all text-xs sm:text-sm"
